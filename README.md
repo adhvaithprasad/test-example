@@ -1,71 +1,64 @@
-# What is MyProduct?
+# Creating your first project
 
-{% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
-{% endhint %}
+## Requirements
 
-Here are a couple of examples of succinct overviews from products with really great docs:
+Git&#x20;
 
-> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
->
-> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
->
-> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
+a web browser
 
-> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
->
-> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
+a terminal ( here it's an ubuntu terminal but you can use any which supports git )
 
-## Getting Started
+## Creating a project
 
-**Got 2 minutes?** Check out a video overview of our product:
+### Initialize git
 
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
+Open your comman prompt. And type <mark style="color:yellow;">**`git init`**</mark> . This initializes a git repository or more specifically a `.git` folder which contains `blobs` `commits` and everything else **you need not worry about**.
 
-{% hint style="info" %}
-**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
-{% endhint %}
+### **Create a sample file**
 
-### Guides: Jump right in
+Lets create a sample Readme file called `README.md` .
 
-Follow our handy guides to get started on the basics as quickly as possible:
+```
+<![CDATA[
+# ${1:Project Name}
+TODO: Write a project description
+## Installation
+TODO: Describe the installation process
+## Usage
+TODO: Write usage instructions
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+## History
+TODO: Write history
+## Credits
+TODO: Write credits
+## License
+TODO: Write license
+]]>
+```
 
-{% content-ref url="guides/creating-your-first-project.md" %}
-[creating-your-first-project.md](guides/creating-your-first-project.md)
-{% endcontent-ref %}
+### Commiting the file
 
-{% content-ref url="guides/creating-your-first-task.md" %}
-[creating-your-first-task.md](guides/creating-your-first-task.md)
-{% endcontent-ref %}
+First we have to add the file with <mark style="color:yellow;">**`git add .`**</mark>  this adds all files previously not identified by git.
 
-{% content-ref url="guides/advanced-permissions.md" %}
-[advanced-permissions.md](guides/advanced-permissions.md)
-{% endcontent-ref %}
+Now if you don't encounter any errors type <mark style="color:yellow;">**`git commit -m "`**</mark><mark style="color:green;">**`A sample message`**</mark><mark style="color:yellow;">**`"`**</mark> .  &#x20;
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+you can replace <mark style="color:green;">**A sample message**</mark> with anything you want to identify with it.
 
-### Fundamentals: Dive a little deeper
 
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
-{% endcontent-ref %}
+### Pushing the file
 
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
-{% endcontent-ref %}
+Push the file with <mark style="color:yellow;">**`git --set-upstream https://git.krios.studio/`**</mark><mark style="color:purple;">**`USERNAME`**</mark><mark style="color:yellow;">**`/`**</mark><mark style="color:purple;">**`REPOSITORY-NAME`**</mark>**`  `**<mark style="color:yellow;">**``**</mark>**`  `**<mark style="color:purple;">**`BRANCH`**</mark> .
 
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
-{% endcontent-ref %}
+Replace <mark style="color:purple;">**`USERNAME`**</mark> <mark style="color:purple;">**`REPOSITORY-NAME`**</mark> and <mark style="color:purple;">**`BRANCH`**</mark> with your username , reository name and branch respectively
 
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
-{% endcontent-ref %}
+{% hint style="warning" %}
+&#x20;The above command should only be done for the first push . After that just use
 
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
+<mark style="color:yellow;">**`git push https://git.krios.studio/`**</mark><mark style="color:purple;">**`username`**</mark><mark style="color:yellow;">**`/`**</mark><mark style="color:purple;">**`repository-name`**</mark> .
 {% endhint %}
